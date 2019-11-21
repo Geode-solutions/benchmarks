@@ -1,1 +1,1 @@
-[{"name":"algorithm","mean":["6506"],"deviation":["239.512"]},{"name":"assert","mean":["36408"],"deviation":["4295.58"]},{"name":"attribute","mean":["2738184"],"deviation":["1.47791e+07"]}]
+[{"name":"algorithm","mean":["6506","6511"],"deviation":["239.512","170.096"]},{"name":"assert","mean":["36408"],"deviation":["4295.58"]},{"name":"attribute","mean":["2738184"],"deviation":["1.47791e+07"]}]
