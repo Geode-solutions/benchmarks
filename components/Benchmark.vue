@@ -35,25 +35,25 @@ export default {
         array.push({
           index,
           mean: element.mean / this.scaling,
-          up: (element.mean + element.deviation) / this.scaling,
-          down: (element.mean - element.deviation) / this.scaling
+          up: element.up / this.scaling,
+          down: element.down / this.scaling
         })
       )
       return array;
     },
     maxDataUp() {
       let array = [];
-      this.data.forEach(element =>
-        array.push(element.mean + element.deviation)
+      this.rescaledData.forEach(element =>
+        array.push(element.up)
       )
-      return Math.max(...array) / this.scaling;
+      return Math.max(...array);
     },
     minDataDown() {
       let array = [];
-      this.data.forEach(element =>
-        array.push(element.mean - element.deviation)
+      this.rescaledData.forEach(element =>
+        array.push(element.down)
       )
-      return Math.min(...array) / this.scaling;
+      return Math.min(...array);
     },
     chartWidth() {
       return this.svgWidth - this.margin.left - this.margin.right
