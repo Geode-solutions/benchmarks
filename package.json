@@ -14,7 +14,7 @@
   "dependencies": {
     "@bazzite/nuxt-netlify": "^0.1.1",
     "@nuxtjs/vuetify": "1.9.0",
-    "d3": "^5.14.2",
+    "d3": "^7.6.1",
     "nuxt": "^2.10.2"
   },
   "devDependencies": {
